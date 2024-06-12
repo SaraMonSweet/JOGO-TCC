@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+<body>
+    <div class="main">
+
+        <div id="form-box">
+
+            <div id="button-box">
+                <div id="btn"></div>
+                <button type="button" id="toggle-login" onclick="login()">Login</button>
+                <button type="button" id="toggle-register" onclick="register()">Registro</button>
+            </div>
+
+            <form class="input-group" id="Login">
+                <input type="text" id="User" placeholder="EMAIL" required>
+                <input type="password" id="Pass" placeholder="SENHA" required>
+
+                <a id="forgot" href="">ESQUECI A SENHA</a>
+
+                <button type="submit" class="submit-btn" id="login-btn">LOGIN</button>
+            </form>
+
+            <form class="input-group" id="Register">
+                <input type="text" id="UserR" placeholder="INSIRA SEU NOME" required>
+                <input type="email" id="Email" placeholder="INSIRA SEU EMAIL" required>
+                <input type="text" id="PassR" placeholder="CRIE UMA SENHA" required>
+                
+                <button type="submit" class="submit-btn" id="register-btn">REGISTRAR</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/scripts/login.js"></script>
+    
+</body>
+</html>
